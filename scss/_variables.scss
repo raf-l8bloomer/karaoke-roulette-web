@@ -1,0 +1,28 @@
+/*COLORS */
+
+$green: #00F000;
+$blue: #1C26F8;
+$pink: #F10ADF;
+$orange-fill: #FFE7DE;
+$orange-stroke: #E99D66;
+$black: #000000;
+$white: #fff;
+
+/*FONTS */
+
+
+@font-face {
+    font-family: 'Excluded Regular';
+    src: url('../fonts/excluded-regular.woff2') format('woff2'),
+        url('../fonts/excluded-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Excluded Italic';
+    src: url('../fonts/excluded-italic.woff2') format('woff2'),
+        url('../fonts/excluded-italic.ttf') format('truetype');
+}
+
+
+$h1-font-stack: 'Excluded Italic', Arial, sans-serif;
+$font-stack: 'Excluded Regular', Arial, sans-serif;

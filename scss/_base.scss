@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+
+}
+
+h1 {
+    font-family: $h1-font-stack;
+    font-size: 3rem;
+    color: $green;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: $white;
+}
+
+
+h2,
+p,
+button {
+    font-family: $font-stack;
+}
+
+p {
+    // font-family: $font-stack;
+    font-size: 1.9rem;
+    letter-spacing: 0rem;
+    color: $black;
+}
+
+button {
+    font-size: 1rem;
+    width: 100%;
+    background-color: $pink;
+    color: $white;
+}
+
+button:hover {
+    filter: brightness(70%);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 860px;
+    width: 345px;
+    background-color: $black;
+}

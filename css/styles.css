@@ -1,0 +1,138 @@
+/*COLORS */
+/*FONTS */
+@font-face {
+  font-family: "Excluded Regular";
+  src: url("../fonts/excluded-regular.woff2") format("woff2"), url("../fonts/excluded-regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Excluded Italic";
+  src: url("../fonts/excluded-italic.woff2") format("woff2"), url("../fonts/excluded-italic.ttf") format("truetype");
+}
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Excluded Italic", Arial, sans-serif;
+  font-size: 3rem;
+  color: #00F000;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+h2,
+p,
+button {
+  font-family: "Excluded Regular", Arial, sans-serif;
+}
+
+p {
+  font-size: 1.9rem;
+  letter-spacing: 0rem;
+  color: #000000;
+}
+
+button {
+  font-size: 1rem;
+  width: 100%;
+  background-color: #F10ADF;
+  color: #fff;
+}
+
+button:hover {
+  filter: brightness(70%);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2em;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 860px;
+  width: 345px;
+  background-color: #000000;
+}
+
+.border {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+  margin: 25px;
+  height: 100%;
+  width: 100%;
+}
+
+.interaction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+  width: 100%;
+}
+
+span {
+  background-color: #FFE7DE;
+  width: 100%;
+  border-top: 20px #E99D66 solid;
+  border-bottom: 20px #E99D66 solid;
+}
+
+.prompt {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+#spin {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+#complete {
+  background-color: #E99D66;
+}
+
+.button {
+  padding: 10px 30px;
+  font-family: "Excluded Regular", Arial, sans-serif;
+}
+
+.border {
+  background: linear-gradient(90deg, #1C26F8 50%, transparent 50%), linear-gradient(90deg, #1C26F8 50%, transparent 50%), linear-gradient(0deg, #1C26F8 50%, transparent 50%), linear-gradient(0deg, #1C26F8 50%, transparent 50%);
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px;
+  background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
+  padding: 10px;
+  animation: dash 10s linear infinite;
+}
+
+@keyframes dash {
+  to {
+    background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

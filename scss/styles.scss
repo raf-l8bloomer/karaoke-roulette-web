@@ -1,0 +1,81 @@
+@import 'variables',
+'base';
+
+
+.border {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin: 25px;
+    height: 100%;
+    width: 100%;
+}
+
+.interaction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $white;
+    width: 100%;
+}
+
+span {
+    background-color: $orange-fill;
+    width: 100%;
+    // margin: 10px;
+    border-top: 20px $orange-stroke solid;
+    border-bottom: 20px $orange-stroke  solid;
+}
+
+.prompt {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0
+}
+
+.options {
+    // margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+#spin {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;;
+}
+
+#complete {
+    background-color: $orange-stroke;
+}
+
+.button {
+    padding: 10px 30px;
+    font-family: $font-stack;
+}
+
+
+.border {
+
+    background: linear-gradient(90deg, $blue 50%, transparent 50%),
+        linear-gradient(90deg, $blue 50%, transparent 50%),
+        linear-gradient(0deg, $blue 50%, transparent 50%),
+        linear-gradient(0deg, $blue 50%, transparent 50%);
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px;
+    background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
+    padding: 10px;
+    animation: dash 10s linear infinite;
+}
+
+@keyframes dash {
+    to {
+        background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
+    }
+}
