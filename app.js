@@ -65,18 +65,3 @@ complete.addEventListener('click', () => {
     console.log(`These are completed prompts: ${completedPrompts} `);
     console.log(`What's left of data prompts ${data} `)
 })
-
-chrome.runtime.onInstalled.addListener(() => {
-    chrome.contextMenus.create({
-      id: 'openSidePanel',
-      title: 'Open side panel',
-      contexts: ['all']
-    });
-  });
-  
-  // chrome.contextMenus.onClicked.addListener((info, tab) => {
-  //   if (info.menuItemId === 'openSidePanel') {
-  //     // This will open the panel in all the pages on the current window.
-  //     chrome.sidePanel.open({ windowId: tab.windowId });
-  //   }
-  // });

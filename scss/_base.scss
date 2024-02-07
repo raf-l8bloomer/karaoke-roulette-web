@@ -3,6 +3,17 @@
 
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+
+}
+
+
 h1 {
     font-family: $h1-font-stack;
     font-size: 3rem;
@@ -39,21 +50,12 @@ button:hover {
     filter: brightness(70%);
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 2em;
 
-}
 
 body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 860px;
-    width: 345px;
+    height: 100vh;
     background-color: $black;
 }
